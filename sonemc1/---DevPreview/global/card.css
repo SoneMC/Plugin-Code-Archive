@@ -1,0 +1,101 @@
+.info-card {
+  max-width: 81%;
+  margin: 10px auto; 
+  padding: 10px 20px; 
+  box-sizing: border-box;
+  border-radius: 5px; 
+  font-size: 0.9rem; 
+  color: #333; 
+  text-align: left; 
+  margin-bottom: 30px;
+}
+
+/* Expermimetnal */
+
+.info-card.exp {
+  background-color: #e3f2fd;
+  border: 1px solid #42a5f5;
+}
+.info-card.exp h2 {
+  color: #1e88e5;
+}
+.info-card.exp p {
+  color: #555;
+}
+
+/* Under developmetn */
+.info-card.dev {
+  background-color: #fff3e0;
+  border: 1px solid #ffb74d;
+}
+.info-card.dev h2 {
+  color: #fb8c00;
+}
+.info-card.dev p {
+  color: #555;
+}
+
+/* Global - Notice/info/note */
+.info-card.note {
+  background-color: #e0f2f1;
+  border: 1px solid #26a69a;
+}
+.info-card.note h2 {
+  color: #00897b;
+}
+.info-card.note p {
+  color: #555;
+}
+
+
+
+
+.plugin-card {
+  max-width: 81%;
+  margin: 10px auto; 
+  padding: 10px 20px; 
+  box-sizing: border-box;
+  border-radius: 5px; 
+  font-size: 0.9rem; 
+  color: #333; 
+  text-align: left;
+  margin-top: 10%;
+  margin-bottom: -5%;
+}
+
+/* Expermimetnal */
+
+.plugin-card.exp {
+  background-color: #e3f2fd;
+  border: 1px solid #42a5f5;
+}
+.plugin-card.exp h2 {
+  color: #1e88e5;
+}
+.plugin-card.exp p {
+  color: #555;
+}
+
+/* Under developmetn */
+.plugin-card.dev {
+  background-color: #fff3e0;
+  border: 1px solid #ffb74d;
+}
+.plugin-card.dev h2 {
+  color: #fb8c00;
+}
+.plugin-card.dev p {
+  color: #555;
+}
+
+/* Global - Notice/info/note */
+.plugin-card.note {
+  background-color: #e0f2f1;
+  border: 1px solid #26a69a;
+}
+.plugin-card.note h2 {
+  color: #00897b;
+}
+.plugin-card.note p {
+  color: #555;
+}

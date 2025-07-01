@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Title -->
+        <title>SoneMCT - TextEditor</title>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- SEO -->
+        <meta name="keywords" content="Minecraft Plugins, SoneMC, Spigot, Paper, Plugin Development, Minecraft 1.20+, Minecraft Servers, Plugins, Mc, Motd, TextEditor">
+        <meta name="description" content="SoneMC - Minecraft Plugin Development for 1.20+">
+        <meta name="author" content="SoneMC, Wejkey">
+      
+        <!-- Discord & others -->
+        <meta property="og:description" content="Free to use Minecraft plugins focused on Fun and Moderation. Primarly developed for versions 1.20 and above.">
+        <meta property="og:image" content="https://github.com/SoneMCPL/Images/raw/main/smc.png">
+        <meta property="og:title" content="SoneMC - Minecraft Plugin Development">
+        <meta property="og:url" content="https://sonemc.pages.dev">
+        <meta property="og:type" content="website">
+      
+        <!-- Performance -->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" as="style">
+        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+        <link rel="canonical" href="https://sonemc.pages.dev">
+      
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../../global/scrollbar.css">
+        <link rel="stylesheet" href="../../global/dark.css">
+        <link rel="stylesheet" href="../../global/media.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="https://github.com/SoneMCPL/Images/raw/main/smc.png">
+        
+    </head>  
+<body>
+
+<!-- Editor -->
+<section class="about" id="MOTD">
+<div class="container">
+    <div class="color-section">Basic</div>
+    <div class="color-panel" id="basicColors"></div>
+     
+    <div class="color-section">Light</div>
+    <div class="color-panel" id="lightColors"></div>
+     
+    <div class="color-section">Styles</div>
+    <div class="color-panel" id="styles"></div>
+     
+    <textarea id="inputBox" placeholder="You can edit Minecraft messages or MOTD here."></textarea>
+     
+    <div class="output" id="outputBox"></div>
+     
+    <div class="alignment-buttons">
+      <button class="left-align" onclick="setAlignment('left')">Left</button>
+      <button class="center-align" onclick="setAlignment('center')">Center</button>
+   </div>
+</div>
+</section>
+
+
+</div>
+<footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>SoneMC</h3>
+        <p>Minecraft Plugin Development</p>
+      </div>
+      <hr>
+      <div class="footer-links">
+        <a href="https://discord.gg/DxpqN5WXRt" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="https://github.com/sonemcpl" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.spigotmc.org/members/sonemc.2226356/" target="_blank"><i class="fas fa-cubes"></i></a>
+        <button id="darkModeToggle" class="toggle-mode"><i class="fas fa-moon"></i></button>
+      </div>
+      <hr>
+      <div class="footer-copy">
+        <p>&copy; 2025 SoneMC - All rights reserved | Last update: April 19, 2025</p>
+      </div>
+    </div>
+</footer>
+
+     <script src="script.js"></script>
+     <script src="../../script/dark.js"></script>
+ </body>
+</html>

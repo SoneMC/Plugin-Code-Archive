@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoneMC - LetsPlay Documentation</title>
+
+    <!-- SEO -->
+    <meta name="keywords" content="Minecraft Plugins, SoneMC, Spigot, Paper, Plugin Development, Minecraft 1.20+, Minecraft Servers, Plugins, Mc">
+    <meta name="description" content="SoneMC - Minecraft Plugin Development for 1.20+">
+    <meta name="author" content="SoneMC, Wejkey">
+    
+    <!-- Discord & others -->
+    <meta property="og:description" content="Free to use Minecraft plugins focused on Fun and Moderation. Primarly developed for versions 1.20 and above.">
+    <meta property="og:image" content="https://github.com/SoneMCPL/Images/raw/main/website/SoneMC(PNG).png">
+    <meta property="og:title" content="SoneMC - Minecraft Plugin Development">
+    <meta property="og:url" content="https://sonemc.pages.dev">
+    <meta property="og:type" content="website">
+ 
+    <!-- Perf -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="canonical" href="https://sonemc.pages.dev">
+ 
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../../assets/css/media.css">
+    <link rel="stylesheet" href="../../../assets/css/mediaglobal.css">
+    <link rel="stylesheet" href="../../../assets/css/global.css">
+    <link rel="stylesheet" href="../../../assets/css/docs.css">
+    <link rel="stylesheet" href="../../../assets/css/scrollbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <link rel="icon" href="../../../assets/img/favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="../../../index.html">
+                    <span class="logo-sone">Sone</span><span class="logo-mc">MC</span>
+                </a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../../index.html#about">About</a></li>
+                <li><a href="../../../index.html#projects">Projects</a></li>
+                <li><a href="../../../index.html#faq">FAQ</a></li>
+                <li><a href="../../../information/index.html">Informations</a></li>
+                <li><a href="../../index.html" class="nav-docs active">Docs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="docs-container">
+                <aside class="docs-sidebar">
+            <div class="sidebar-header">
+                <h2>Documentation</h2>
+            </div>
+            <div class="sidebar-search">
+                <input type="text" placeholder="Search docs..." id="docsSearch">
+                <i class="fas fa-search"></i>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="sidebar-section">
+                    <h3>Getting Started</h3>
+                    <ul>
+                        <li><a href="../../index.html#home">Home</a></li>
+                        <li><a href="../../index.html#introduction">Introduction</a></li>
+                        <li><a href="../../index.html#plugins-overview">Available Plugins</a></li>
+                        <li><a href="../../index.html#installation">Installation</a></li>
+                        <li><a href="../../index.html#troubleshooting">Troubleshooting</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h3>Plugins</h3>
+                    <ul>
+                        <li>
+                            <a href="../valentines/index.html">Valentines</a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="../valentines/index.html#home">Home</a></li>
+                                <li><a href="../valentines/index.html#features">Features</a></li>
+                                <li><a href="../valentines/index.html#commands">Commands</a></li>
+                                <li><a href="../valentines/index.html#permissions">Permissions</a></li>
+                                <li><a href="../valentines/index.html#config">Configuration</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../letsplay/index.html">LetsPlay</a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#commands">Commands</a></li>
+                                <li><a href="#permissions">Permissions</a></li>
+                                <li><a href="#config">Configuration</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </aside>
+
+        <main class="docs-content" id="home">
+            <div class="plugin-header">
+                <div class="plugin-header-icon" style="background: linear-gradient(135deg, #4bb73a, #4ef434);">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <div class="plugin-header-info">
+                    <h1>LetsPlay</h1>
+                    <div class="plugin-header-meta">
+                        <div class="plugin-header-meta-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Version: 1.0-Experimental-3</span>
+                        </div>
+                        <div class="plugin-header-meta-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Status: Experimental</span>
+                        </div>
+                        <div class="plugin-header-meta-item">
+                            <i class="fas fa-cube"></i>
+                            <span>Tested on: 1.19.x - 1.21.x</span>
+                        </div>
+                        <div class="plugin-header-meta-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Last updated: May 13, 2025</span>
+                        </div>
+                    </div>
+                    <p>Simple lobby system designed for smaller server/communities</p>
+                    <div class="plugin-download">
+                        <a href="https://www.spigotmc.org/resources/letsplay.124771/download?version=589123" class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download Latest
+                        </a>
+                        <a href="https://www.spigotmc.org/resources/letsplay.124771/" class="btn btn-outline" style="color: var(--dark); border-color: var(--dark);">
+                            <i class="fa-solid fa-faucet-drip"></i> View on SpigotMC
+                        </a>
+                        <a href="https://modrinth.com/plugin/smc_letsplay" class="btn btn-outline" style="color: var(--dark); border-color: var(--dark);">
+                            <i class="fa-solid fa-wrench"></i> View on Modrinth
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <section class="docs-section" id="features">
+                <h2>Features</h2>
+                <ul>
+                    <li><strong>Compass-based Server Selector (SS)</strong> - On the lobby world, players get a compass to select mini-game servers.</li>
+                    <li><strong>Custom commands via Server Selector</strong> - Configurable in config.yml</li>
+                    <li><strong>Lobby settings</strong> - Block damage, interaction, and more.</li>
+                    <li><strong>Command aliases</strong> - <code>/lobby</code>,<code>/hub</code>,<code>/spawn</code> and <code>/lpreload</code></li>
+                    <li><strong>Time played GUI</strong> - Shows player’s profile with playtime (In SS GUI)</li>
+                    <li><strong>Sound effects</strong> - Plays a sound effect when joining a server(in gui)</li>
+                    <li><strong>Particles</strong> - Particles when setting up lobby (example)</li>
+                    <li><strong>Teleport settings</strong> - Player can be teleported only when not mobing, not being damaged..</li>
+                </ul>
+            </section>
+            
+            <section class="docs-section" id="commands">
+                <h2>Commands</h2>
+                <p>LetsPlay provides few commands to help it make it more controlable: </p>
+                
+                <h3>All commands used in plugin:</h3>
+                <table class="docs-table command-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Alias</th>
+                            <th>Description</th>
+                            <th>Permission</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>/setlobby</td>
+                            <th>-</th>
+                            <td>Set the current location as the lobby</td>
+                            <td>letsplay.setlobby</td>
+                        </tr>
+                        <tr>
+                            <td>/lobby</td>
+                            <th>/hub, /spawn</th>
+                            <td>Teleport to the lobby</td>
+                            <td>letsplay.lobby</td>
+                        </tr>
+                        <tr>
+                            <td>/lobbysettings</td>
+                            <th>-</th>
+                            <td>Open GUI to configure lobby behavior</td>
+                            <td>letsplay.lobbysettings</td>
+                        </tr>
+                        <tr>
+                            <td>/letsplayreload</td>
+                            <th>/lpreload</th>
+                            <td>Reload the plugin configs</td>
+                            <td>letsplay.reload</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section class="docs-section" id="permissions">
+                <h2>Permissions</h2>
+                <p>This plugin uses few permissions to control acces to commands and features:
+                </p>
+                
+                <h3>Permission Groups</h3>
+                <ul>
+                    <li><code>letsplay.*</code> - Access to everything</li>
+                    <li><code>letsplay.setlobby</code> - Set the lobby</li>
+                    <li><code>letsplay.lobby</code> - Teleport to lobby</li>
+                    <li><code>letsplay.lobbysettings</code> - Open lobby settings GUI</li>
+                    <li><code>letsplay.reload</code> - Reload configs</li>
+                </ul>
+                <h3>Bypass</h3>
+                <ul>
+                    <li><code>letsplay.bypass.*</code></li>
+                    <li><code>letsplay.bypass.blockbreak</code></li>
+                    <li><code>letsplay.bypass.blockplace</code></li>
+                    <li><code>letsplay.bypass.containers</code></li>
+                </ul>
+            </section>
+            
+            <section class="docs-section" id="config">
+                <h2>Configuration</h2>
+                <p>Every part of LetsPlay plugin is customizable in config files.</p>
+                
+                <h3>Main Configuration (config.yml)</h3>
+                <div class="config-example">
+                    <div class="plugin-file-example">
+                        <div class="plugin-file-header">
+                            <span class="plugin-file-name">config.yml</span>
+                            <button class="copy-button">Copy</button>
+                        </div>
+                        <div class="plugin-file-content">
+                            <pre><code># Messages
+messages:
+  prefix: "&7🛠&2Lets&aPlay&7🛠&r "
+  lobby-set: "&aLobby has been set successfully!"
+  no-permission: "&cYou don't have permission to use this command!"
+  no-lobby-set: "&cNo lobby has been set yet!"
+  teleported-to-lobby: "&aYou have been teleported to the lobby!"
+  settings-saved: "&aSettings have been saved successfully!"
+  configs-reloaded: "&aAll configurations have been reloaded successfully!"
+  teleport-cancelled: "&cTeleport cancelled due to movement or damage!"
+  teleport-warmup: "&eTeleporting to lobby in &6%time% &eseconds..."
+  teleport-warmup-complete: "&aTeleporting to lobby now!"
+  command-cooldown: "&cYou need to wait &6%time% &cseconds before using this command again!"
+
+# Settings
+settings:
+  # Lobby protection settings
+  lobby-protection:
+    enabled: true
+    prevent-fall-damage: true
+    prevent-pvp: true
+    prevent-all-damage: true
+    prevent-block-break: true
+    prevent-block-place: true
+    prevent-hunger: true
+    prevent-drowning: true
+    prevent-container-access: true
+    prevent-interaction: true
+    prevent-animal-killing: false
+    force-adventure-mode: true
+    teleport-on-join: true
+    clear-inventory: true
+
+  # Items settings
+  items:
+    compass:
+      enabled: true
+      slot: 0 # 0 = first slot
+      name: "&bServer Selector"
+      lore:
+        - "&7Right-click to open"
+        - "&7the server selector!"
+
+    info-book:
+      enabled: true
+      slot: 8 # 8 = Last slot
+      name: "&aServer Information"
+      lore:
+        - "&7Right-click to view"
+        - "&7server information!"
+
+  # Teleport settings
+  teleport:
+    lobby-tp-time: 3 # Seconds to wait before teleporting to lobby
+    cancel-on-move: true # Cancel teleport if player moves
+    cancel-on-damage: true # Cancel teleport if player takes damage
+    effect-particles: true # Show particles when teleporting
+    effect-sound: true # Play sound when teleporting
+
+  # Command cooldowns (in seconds)
+  cooldowns:
+    lobby: 5
+
+  sounds:
+    enabled: true
+    teleport-start: "BLOCK_NOTE_BLOCK_PLING" # Sound when teleport starts
+    teleport-success: "ENTITY_ENDERMAN_TELEPORT" # Sound when teleport is successful
+    teleport-cancel: "ENTITY_VILLAGER_NO" # Sound when teleport is cancelled
+    gui-click: "UI_BUTTON_CLICK" # Sound when GUI item is clicked (EXPERIMENTAL)
+    server-select: "BLOCK_NOTE_BLOCK_HARP" # Sound when selecting a server</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="config-example">
+                    <div class="plugin-file-example">
+                        <div class="plugin-file-header">
+                            <span class="plugin-file-name">info.yml</span>
+                            <button class="copy-button">Copy</button>
+                        </div>
+                        <div class="plugin-file-content">
+                            <pre><code>info:
+  - "&f&l=== &aLetsPlay &fplugin ==="
+  - " "
+  - "&fWelcome to our server. You are using the &aLetsPlay&f lobby system on your server."
+  - "&fYou can edit this message in the plugin files. File 'info.yml'"
+  - "&fYou can add/remove more lines"
+  - "&fYou can use &cA&bn&ey &8c&3o&5l&6l&bo&1r&fs or &nstyles&r? &oItalic&r? &kkkkkkkk&r?"
+  - " "
+  - "&fThank you for using &aLetsPlay &fplugin."
+  - " "
+  - "&f&l================================="</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="config-example">
+                    <div class="plugin-file-example">
+                        <div class="plugin-file-header">
+                            <span class="plugin-file-name">menu.yml</span>
+                            <button class="copy-button">Copy</button>
+                        </div>
+                        <div class="plugin-file-content">
+                            <pre><code># Menu settings
+menu:
+  title: "&8&lServer Selector"
+  size: 54 # (6 rows)
+  fill-empty-slots:
+    enabled: true
+    material: "BLACK_STAINED_GLASS_PANE" # Empty spots will change into this block
+    name: " "
+
+# Player stats
+player-stats:
+  enabled: true
+  slot: 49
+  name: "&e&lYour Stats"
+  lore:
+    - "&7Time played: &e%playtime%"
+    - "&7First join: &e%first_join%"
+    - "&7Last seen: &e%last_seen%"
+
+# Servers configuration
+servers:
+  survival:
+    enabled: true
+    slot: 19
+    material: "GRASS_BLOCK"
+    amount: 1
+    name: "&a&lServer1"
+    lore:
+      - "&7Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      - "&7Online players: &a%survival_online%" # this function is EXPERIMENTAL, If its not working, you can safely remove it
+      - " "
+      - "&eInteger ut sagittis dolor."
+    command: "join survival" # Any command
+
+  skyblock:
+    enabled: true
+    slot: 21
+    material: "DIRT_BLOCK"
+    amount: 1
+    name: "&b&lServer2"
+    lore:
+      - "&7Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      - "&7Online players: &a%skyblock_online%" # this function is EXPERIMENTAL, If its not working, you can safely remove it
+      - " "
+      - "&eInteger ut sagittis dolor."
+    command: "join skyblock" # Any command
+
+  creative:
+    enabled: true
+    slot: 23
+    material: "DIAMOND_BLOCK"
+    amount: 1
+    name: "&d&lServer3"
+    lore:
+      - "&7Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      - "&7Online players: &a%creative_online%" # this function is EXPERIMENTAL, If its not working, you can safely remove it
+      - " "
+      - "&eInteger ut sagittis dolor."
+    command: "join creative" # Any command
+
+  minigames:
+    enabled: true
+    slot: 25
+    material: "ENDER_EYE"
+    amount: 1
+    name: "&5&lServer4"
+    lore:
+      - "&7Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      - "&7Online players: &a%minigames_online%" # this function is EXPERIMENTAL, If its not working, you can safely remove it
+      - " "
+      - "&eInteger ut sagittis dolor."
+    command: "join minigames" # Any command</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="docs-nav">
+                <a href="../valentines/index.html#home" class="docs-nav-prev">
+                    <i class="fas fa-chevron-left"></i> Valentines
+                </a>
+                <a class="docs-nav-next disabled">
+                    Nothing <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-sone">Sone</span><span class="logo-mc">MC</span>
+                    <p>We're just getting started.</p>
+                </div>
+            
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="https://discord.gg/DxpqN5WXRt">Discord</a></li>
+                            <li><a href="https://github.com/SoneMCPL">Github</a></li>
+                            <li><a href="mailto:sonemcpl@gmail.com">Mail</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Homepage</h3>
+                        <ul>
+                            <li><a href="https://sonemc.pages.dev/#home">Home</a></li>
+                            <li><a href="https://sonemc.pages.dev/#about">About</a></li>
+                            <li><a href="https://sonemc.pages.dev/#projects">Projects</a></li>
+                            <li><a href="https://sonemc.pages.dev/#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Help</h3>
+                        <ul>
+                            <li><a href="https://sonemc.pages.dev/tools">Tools</a></li>
+                            <li><a href="https://sonemc.pages.dev/docs">Documentation</a></li>
+                            <li><a href="https://sonemc.pages.dev/information">Informations</a></li>
+                            <li><a href="https://sonemc.pages.dev/terms">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="https://www.spigotmc.org/members/sonemc.2226356/">SpigotMC</a></li>
+                            <li><a href="https://modrinth.com/user/SoneMC">Modrinth</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SoneMC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="../../../assets/js/global.js"></script>
+    <script src="../../../assets/js/docs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

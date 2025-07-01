@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoneMC - Documentation</title>
+
+    <!-- SEO -->
+    <meta name="keywords" content="Minecraft Plugins, SoneMC, Spigot, Paper, Plugin Development, Minecraft 1.20+, Minecraft Servers, Plugins, Mc">
+    <meta name="description" content="SoneMC - Minecraft Plugin Development for 1.20+">
+    <meta name="author" content="SoneMC, Wejkey">
+    
+    <!-- Discord & others -->
+    <meta property="og:description" content="Free to use Minecraft plugins focused on Fun and Moderation. Primarly developed for versions 1.20 and above.">
+    <meta property="og:image" content="https://github.com/SoneMCPL/Images/raw/main/website/SoneMC(PNG).png">
+    <meta property="og:title" content="SoneMC - Minecraft Plugin Development">
+    <meta property="og:url" content="https://sonemc.pages.dev">
+    <meta property="og:type" content="website">
+   
+    <!-- Perf -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="canonical" href="https://sonemc.pages.dev">
+   
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/media.css">
+    <link rel="stylesheet" href="../assets/css/mediaglobal.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/docs.css">
+    <link rel="stylesheet" href="../assets/css/scrollbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <link rel="icon" href="../assets/img/favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <span class="logo-sone">Sone</span><span class="logo-mc">MC</span>
+                </a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#faq">FAQ</a></li>
+                <li><a href="../information/index.html">Informations</a></li>
+                <li><a href="../docs/index.html" class="nav-docs">Docs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="docs-container">
+        <aside class="docs-sidebar">
+            <div class="sidebar-header">
+                <h2>Documentation</h2>
+            </div>
+            <div class="sidebar-search">
+                <input type="text" placeholder="Search docs..." id="docsSearch">
+                <i class="fas fa-search"></i>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="sidebar-section">
+                    <h3>Getting Started</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#introduction">Introduction</a></li>
+                        <li><a href="#plugins-overview">Available Plugins</a></li>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#troubleshooting">Troubleshooting</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h3>Plugins</h3>
+                    <ul>
+                        <li>
+                            <a href="plugins/valentines/index.html">Valentines</a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="plugins/valentines/index.html#home">Home</a></li>
+                                <li><a href="plugins/valentines/index.html#features">Features</a></li>
+                                <li><a href="plugins/valentines/index.html#commands">Commands</a></li>
+                                <li><a href="plugins/valentines/index.html#permissions">Permissions</a></li>
+                                <li><a href="plugins/valentines/index.html#config">Configuration</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="plugins/letsplay/index.html">LetsPlay</a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="plugins/letsplay/index.html#home">Home</a></li>
+                                <li><a href="plugins/letsplay/index.html#features">Features</a></li>
+                                <li><a href="plugins/letsplay/index.html#commands">Commands</a></li>
+                                <li><a href="plugins/letsplay/index.html#permissions">Permissions</a></li>
+                                <li><a href="plugins/letsplay/index.html#config">Configuration</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="docs-content" id="home">
+            <div class="docs-header">
+                <h1>Welcome to <b><span class="text-primary">Sone</span><span class="text-secondary">MC</span></b> Documentation</h1>
+                <p>Here, you can find documentation to help you start working with SoneMC plugins as quickly as possible.</p>
+            </div>
+
+            <section class="docs-section" id="introduction">
+                <h2>Introduction</h2>
+                <p>This documentation will help you understand how to install, configure, and use these plugins effectively. Each plugin has its own section with detailed information about its features; permissions; commands and files.</p>
+            </section>
+
+            <section class="docs-section" id="plugins-overview">
+                <h2>Available Plugins</h2>
+                <div class="plugins-grid">
+
+                    <div class="plugin-card">
+                        <div class="plugin-icon" style="background: linear-gradient(135deg, #673AB7, #9C27B0);">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="plugin-info">
+                            <h3>Valentines</h3>
+                            <div class="plugin-meta">
+                                <span class="plugin-version">2.0-Experimental-2</span>
+                                <span class="plugin-tag tag-experimental">Experimental</span>
+                            </div>
+                            <p>Plugin with marriages, effects and a lots of more.<br><br></p>
+                            <a href="plugins/valentines/index.html#home" class="btn btn-sm">View Documentation</a>
+                        </div>
+                    </div>
+
+                    <div class="plugin-card">
+                        <div class="plugin-icon" style="background: linear-gradient(135deg, #4bb73a, #4ef434);">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <div class="plugin-info">
+                            <h3>LetsPlay</h3>
+                            <div class="plugin-meta">
+                                <span class="plugin-version">1.0-Experimental-3</span>
+                                <span class="plugin-tag tag-Experimental">Experimental</span>
+                            </div>
+                            <p>Simple lobby system designed for smaller server/communities<br><br></p>
+                            <a href="plugins/letsplay/index.html#home" class="btn btn-sm">View Documentation</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section class="docs-section" id="installation">
+                <h2>Installation</h2>
+                <p>Many people know it but, just to ensure you know it too:</p>
+                <ol>
+                    <li>Download the plugin JAR file from our website or SpigotMC.</li>
+                    <li>Place the JAR file in your server's <code>plugins</code> folder.</li>
+                    <li>Start/Restart your server.</li>
+                    <li>Enjoy.</li>
+                </ol>
+            </section>
+
+            <section class="docs-section" id="troubleshooting">
+                <h2>Troubleshooting</h2>
+                <p>If you encounter any issues while using our plugins, check the following common solutions:</p>
+                
+                <div class="docs-card">
+                    <h3>Plugin Doesn't Load</h3>
+                    <ol>
+                        <li>Check if you're using a compatible server version.</li>
+                        <li>Verify that the plugin JAR file is in the correct folder.</li>
+                        <li>Look for error messages in the server console or logs.</li>
+                        <li>Try to reinstall plugin.</li>
+                    </ol>
+                </div>
+                
+                <div class="docs-card">
+                    <h3>Configuration Issues</h3>
+                    <ol>
+                        <li>Try reverting to the default configuration and making changes gradually.</li>
+                        <li>Check the plugin's documentation for specific configuration requirements.</li>
+                    </ol>
+                </div>
+                
+            </section>
+
+            <div class="docs-nav">
+                <a href="#" class="docs-nav-prev disabled">
+                    <i class="fas fa-chevron-left"></i> Previous
+                </a>
+                <a href="plugins/valentines/index.html" class="docs-nav-next">
+                     Valentines <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-sone">Sone</span><span class="logo-mc">MC</span>
+                    <p>We're just getting started.</p>
+                </div>
+            
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="https://discord.gg/DxpqN5WXRt">Discord</a></li>
+                            <li><a href="https://github.com/SoneMCPL">Github</a></li>
+                            <li><a href="mailto:sonemcpl@gmail.com">Mail</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Homepage</h3>
+                        <ul>
+                            <li><a href="https://sonemc.pages.dev/#home">Home</a></li>
+                            <li><a href="https://sonemc.pages.dev/#about">About</a></li>
+                            <li><a href="https://sonemc.pages.dev/#projects">Projects</a></li>
+                            <li><a href="https://sonemc.pages.dev/#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Help</h3>
+                        <ul>
+                            <li><a href="https://sonemc.pages.dev/tools">Tools</a></li>
+                            <li><a href="https://sonemc.pages.dev/docs">Documentation</a></li>
+                            <li><a href="https://sonemc.pages.dev/information">Informations</a></li>
+                            <li><a href="https://sonemc.pages.dev/terms">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="https://www.spigotmc.org/members/sonemc.2226356/">SpigotMC</a></li>
+                            <li><a href="https://modrinth.com/user/SoneMC">Modrinth</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SoneMC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="../assets/js/global.js"></script>
+    <script src="../assets/js/docs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

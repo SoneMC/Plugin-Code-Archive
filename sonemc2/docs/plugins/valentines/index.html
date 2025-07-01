@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoneMC - Valentines Documentation</title>
+
+    <!-- SEO -->
+    <meta name="keywords" content="Minecraft Plugins, SoneMC, Spigot, Paper, Plugin Development, Minecraft 1.20+, Minecraft Servers, Plugins, Mc">
+    <meta name="description" content="SoneMC - Minecraft Plugin Development for 1.20+">
+    <meta name="author" content="SoneMC, Wejkey">
+    
+    <!-- Discord & others -->
+    <meta property="og:description" content="Free to use Minecraft plugins focused on Fun and Moderation. Primarly developed for versions 1.20 and above.">
+    <meta property="og:image" content="https://github.com/SoneMCPL/Images/raw/main/website/SoneMC(PNG).png">
+    <meta property="og:title" content="SoneMC - Minecraft Plugin Development">
+    <meta property="og:url" content="https://sonemc.pages.dev">
+    <meta property="og:type" content="website">
+ 
+    <!-- Perf -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="canonical" href="https://sonemc.pages.dev">
+ 
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../../assets/css/media.css">
+    <link rel="stylesheet" href="../../../assets/css/mediaglobal.css">
+    <link rel="stylesheet" href="../../../assets/css/global.css">
+    <link rel="stylesheet" href="../../../assets/css/docs.css">
+    <link rel="stylesheet" href="../../../assets/css/scrollbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <link rel="icon" href="../../../assets/img/favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="../../../index.html">
+                    <span class="logo-sone">Sone</span><span class="logo-mc">MC</span>
+                </a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../../index.html">Home</a></li>
+                <li><a href="../../../index.html#about">About</a></li>
+                <li><a href="../../../index.html#projects">Projects</a></li>
+                <li><a href="../../../index.html#faq">FAQ</a></li>
+                <li><a href="../../../information/index.html">Informations</a></li>
+                <li><a href="../../index.html" class="nav-docs active">Docs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="docs-container">
+        <aside class="docs-sidebar">
+            <div class="sidebar-header">
+                <h2>Documentation</h2>
+            </div>
+            <div class="sidebar-search">
+                <input type="text" placeholder="Search docs..." id="docsSearch">
+                <i class="fas fa-search"></i>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="sidebar-section">
+                    <h3>Getting Started</h3>
+                    <ul>
+                        <li><a href="../../index.html#home">Home</a></li>
+                        <li><a href="../../index.html#introduction">Introduction</a></li>
+                        <li><a href="../../index.html#plugins-overview">Available Plugins</a></li>
+                        <li><a href="../../index.html#installation">Installation</a></li>
+                        <li><a href="../../index.html#troubleshooting">Troubleshooting</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h3>Plugins</h3>
+                    <ul>
+                        <li>
+                            <a href="../valentines/index.html">Valentines</a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#commands">Commands</a></li>
+                                <li><a href="#permissions">Permissions</a></li>
+                                <li><a href="#config">Configuration</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../letsplay/index.html">LetsPlay</a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="../letsplay/index.html#home">Home</a></li>
+                                <li><a href="../letsplay/index.html#features">Features</a></li>
+                                <li><a href="../letsplay/index.html#commands">Commands</a></li>
+                                <li><a href="../letsplay/index.html#permissions">Permissions</a></li>
+                                <li><a href="../letsplay/index.html#config">Configuration</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </aside>
+
+        <main class="docs-content" id="home">
+            <div class="plugin-header">
+                <div class="plugin-header-icon" style="background: linear-gradient(135deg, #673AB7, #9C27B0);">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="plugin-header-info">
+                    <h1>Valentines</h1>
+                    <div class="plugin-header-meta">
+                        <div class="plugin-header-meta-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Version: 2.0-Experimental-2</span>
+                        </div>
+                        <div class="plugin-header-meta-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Status: Experimental</span>
+                        </div>
+                        <div class="plugin-header-meta-item">
+                            <i class="fas fa-cube"></i>
+                            <span>Tested on: 1.16.x - 1.21.x</span>
+                        </div>
+                        <div class="plugin-header-meta-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Last updated: May 10, 2025</span>
+                        </div>
+                    </div>
+                    <p>This plugin let you spread love on your server. Using marriages, leaderboards and even hugs or kisses.</p>
+                    <div class="plugin-download">
+                        <a href="https://www.spigotmc.org/resources/valentines.122853/download?version=588668" class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download Latest
+                        </a>
+                        <a href="https://www.spigotmc.org/resources/valentines.122853/" class="btn btn-outline" style="color: var(--dark); border-color: var(--dark);">
+                            <i class="fa-solid fa-faucet-drip"></i> View on SpigotMC
+                        </a>
+                        <a href="https://modrinth.com/plugin/valentines" class="btn btn-outline" style="color: var(--dark); border-color: var(--dark);">
+                            <i class="fa-solid fa-wrench"></i> View on Modrinth
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <section class="docs-section" id="features">
+                <h2>Features</h2>
+                <ul>
+                    <li><strong>Marriages</strong> - Players can marry or divorce with someone</li>
+                    <li><strong>Kisses/Hugs/Likes</strong> - If you like someone you can always make them more happier</li>
+                    <li><strong>Leaderboard</strong> - Get into Leaderboard and be first with the most hugs/kisses/likes</li>
+                    <li><strong>Effects</strong> - Three special effects around player</li>
+                    <li><strong>Customizable</strong> - Change everything from messages to effects to how you like it</li>
+                    <li><strong>Multi-Language</strong> - Allows admins to change language to: DE, IT, RU, EN</li>
+                    <li><strong>Chat Formatting</strong> - Able to automatically change custom words into custom symbols</li>
+                    <li><strong>GUI</strong> - Leaderboard, married ones, effects settings and more..</li>
+                </ul>
+            </section>
+            
+            <section class="docs-section" id="commands">
+                <h2>Commands</h2>
+                <p>Valentines provides a lots of commands to help it make it even better:</p>
+                
+                <h3>All commands used in plugin:</h3>
+                <table class="docs-table command-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Alias</th>
+                            <th>Description</th>
+                            <th>Permission</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>/valentines</td>
+                            <th>/val</th>
+                            <td>Displays help command</td>
+                            <td>valentines.use</td>
+                        </tr>
+                        <tr>
+                            <td>/vgui</td>
+                            <th>-</th>
+                            <td>Opens GUI</td>
+                            <td>valentines.use</td>
+                        </tr>
+                        <tr>
+                            <td>/valentinesplayer (player)</td>
+                            <th>/vstats</th>
+                            <td>Displays player's stats</td>
+                            <td>valentines.use</td>
+                        </tr>
+                        <tr>
+                            <td>/valentinesleaderboard</td>
+                            <th>/vlb</th>
+                            <td>Displays leaderboard</td>
+                            <td>valentines.use</td>
+                        </tr>
+                        <tr>
+                            <td>/couples</td>
+                            <th>-</th>
+                            <td>Displays all married players</td>
+                            <td>valentines.use</td>
+                        </tr>
+                        <tr>
+                            <td>/marry (player)</td>
+                            <th>-</th>
+                            <td>Marry another player</td>
+                            <td>valentines.marry</td>
+                        </tr>
+                        <tr>
+                            <td>/divorce</td>
+                            <th>-</th>
+                            <td>Divorce your partner</td>
+                            <td>valentines.divorce</td>
+                        </tr>
+                        <tr>
+                            <td>/hug (player)</td>
+                            <th>-</th>
+                            <td>Hugs player</td>
+                            <td>valentines.use</td>
+                        </tr>
+                        <tr>
+                            <td>/kiss (player)</td>
+                            <th>-</th>
+                            <td>Kisses player</td>
+                            <td>valentines.use</td>
+                        </tr>
+                        <tr>
+                            <td>/like (player)</td>
+                            <th>-</th>
+                            <td>Likes player</td>
+                            <td>valentines.use</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section class="docs-section" id="permissions">
+                <h2>Permissions</h2>
+                <p>This plugin uses few permissions to control acces to commands and features:
+                </p>
+                
+                <h3>Permission Groups</h3>
+                <ul>
+                    <li><code>valentines.use</code> - Allows to use default commands</li>
+                    <li><code>valentines.effect</code> - Allows players to have effect around them</li>
+                    <li><code>valentines.marry</code> - Allows to marry someone</li>
+                    <li><code>valentines.divorce</code> - Allows divorce with partner</li>
+                    <li><code>valentines.admin</code> - Allows access to administrative commands</li>
+                </ul>
+            </section>
+            
+            <section class="docs-section" id="config">
+                <h2>Configuration</h2>
+                <p>Every part of Valentines plugin is customizable in files.</p>
+                
+                <h3>Main Configuration (config.yml)</h3>
+                <div class="config-example">
+                    <div class="plugin-file-example">
+                        <div class="plugin-file-header">
+                            <span class="plugin-file-name">config.yml</span>
+                            <button class="copy-button">Copy</button>
+                        </div>
+                        <div class="plugin-file-content">
+                            <pre><code class="language-yaml"># Plugin prefix
+Prefix: "&c❤&f&lValentines&c❤&r "
+
+# Language (de, en, it, ru)
+language: "en"
+
+# Symbol replacement in chat
+symbol-change: true
+symbol-color: "&c"
+symbol: "♥"
+words:
+  - "love"
+  - "valentines"
+  - "heart"
+
+# Effects
+effect:
+  enabled: true
+  particle-density: 2
+  update-rate: 2
+  max-height: 2.0
+  start-height: 0.1
+  radius: 0.85
+
+  # Individual effect toggles
+  player-effects: true
+  kiss-effect: false
+  marriage-effect: false
+
+# Enabled Worlds for effects
+enabled-worlds:
+  - "world"
+  - "world_nether"
+  - "world_the_end"
+
+# Cooldowns (in seconds)
+cooldowns:
+  hug: 60
+  kiss: 60
+  like: 300
+
+# Permission Messages
+NoPermissionMessage: "&cYou do not have permission to use this command."</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Language Configuration (e.g. "lang_en.yml")</h3>
+                <div class="config-example">
+                    <div class="plugin-file-example">
+                        <div class="plugin-file-header">
+                            <span class="plugin-file-name">lang_en.yml</span>
+                            <button class="copy-button">Copy</button>
+                        </div>
+                        <div class="plugin-file-content">
+                            <pre><code class="language-yaml"># English language file for Valentines plugin
+plugin:
+  enabled: "Valentines plugin has been enabled!"
+  disabled: "Valentines plugin has been disabled!"
+
+general:
+  no-permission: "&cYou do not have permission to use this command."
+  player-offline: "&cPlayer must be online for this command!"
+  player-not-found: "&cPlayer not found or has never played before!"
+  partner-offline: "&cYour partner is not online!"
+  cooldown: "&cYou can only {command} once every &d{time}&c seconds!"
+
+help:
+  header: "&d❤ &5Valentines Commands &d❤"
+  valentines: "&d/valentines &f- Displays this message"
+  stats: "&d/valentinesplayer <player> &5[/vstats <player>] &f- Displays player's stats"
+  leaderboard: "&d/valentinesleaderboard &5[/vlb] &f- Displays leaderboard"
+  hug: "&d/hug <player> &f- Hugs a player"
+  kiss: "&d/kiss <player> &f- Kisses a player"
+  like: "&d/like <player> &f- Likes a player"
+  marry: "&d/marry <player> &f- Marry a player"
+  divorce: "&d/divorce &f- Divorce your partner"
+  couples: "&d/couples &f- Display all married couples"
+  gui: "&d/vgui &f- Opens the Valentines GUI"
+
+hug:
+  usage: "&cUse: &d/hug <player>"
+  self: "&cYou cannot hug yourself!"
+  sent: "&fYou hugged &d{player} ❤"
+  received: "&d{player} &fhugged you&d! ❤"
+
+kiss:
+  usage: "&cUse: &d/kiss <player>"
+  self: "&cYou cannot kiss yourself!"
+  sent: "&fYou kissed &d{player} ❤"
+  received: "&d{player} &fkissed you&d! ❤"
+
+like:
+  usage: "&cUse: &d/like <player>"
+  self: "&cYou cannot like yourself!"
+  already-liked: "&cYou have already liked {player}!"
+  cooldown: "&cYou can only like once every &d{time}&c seconds!"
+  sent: "&fYou liked &d{player} ❤"
+  received: "&d{player} &fliked you&d! ❤"
+
+marry:
+  usage: "&cUse: &d/marry <player> or /marry <confirm|decline>"
+  self: "&cYou cannot marry yourself!"
+
+stats:
+  usage: "&cUse: &d/valentinesplayer <player>"
+  header: "&5{player}'s stats:"
+  kisses: "&dKisses received: &f{count}"
+  hugs: "&dHugs received: &f{count}"
+  likes: "&dLikes received: &f{count}"
+  married: "&dMarried to: &f{partner} &d(for {days} days)"
+  single: "&dRelationship status: &fSingle"
+
+leaderboard:
+  header: "&5Leaderboard:"
+  entry: "&a#{rank} &d{player} &r- &d{kisses} kisses &f| &d{hugs} hugs &f| &d{likes} likes"
+
+marriages:
+  header: "&5Married Couples:"
+  couple: "&f❤ &d{player1} &f& &d{player2} &f- &d{days} days"
+  none: "&dThere are no married couples on the server!"
+
+marriage:
+  proposal-sent: "&fMarriage proposal sent to &d{player}"
+  proposal-received: "&d{player} &fwants to marry you. Type &d/marry confirm &ffor confirmation."
+  already-married: "&cYou are already married!"
+  target-already-married: "&c{player} is already married!"
+  no-pending-proposals: "&cYou have no pending marriage proposals!"
+  proposer-offline: "&cThe player who proposed is no longer online!"
+  accept-sender: "&d{player} &faccepted your marriage. You're together&d! ♥"
+  accept-receiver: "&fYou married &d{player}&f! You're together&d! ♥"
+  decline-sender: "&c{player} doesn't want to be with you :("
+  decline-receiver: "&cYou don't want to be with {player}"
+  divorce-initiator: "&cYou have divorced {player}!"
+  divorce-target: "&c{player} has divorced you!"
+  divorce-confirm: "&fAre you sure you want to break up with &d{player}&f? Type &d/divorce &fagain to confirm."
+  not-married: "&cYou are not married!"
+  not-married-to: "&cYou are not married to {player}!"
+  announcement: "&d❤ &f{player1} and {player2} just got married! &d❤"
+  divorce-announcement: "&c{player1} and {player2} have divorced."
+
+gui:
+  main-menu-title: "&d❤ &5Valentines Menu &d❤"
+  stats-menu-title: "&d❤ &5Player Stats &d❤"
+  leaderboard-title: "&d❤ &5Valentines Leaderboard &d❤"
+  marriages-title: "&d❤ &5Married Couples &d❤"
+  settings-title: "&d❤ &5Valentines Settings &d❤"
+
+  stats-button-title: "&dYour Stats"
+  stats-button-lore: "&fView your personal statistics"
+  leaderboard-button-title: "&dLeaderboard"
+  leaderboard-button-lore: "&fSee the top players"
+  marriages-button-title: "&dMarried Couples"
+  marriages-button-lore: "&fView all marriages on the server"
+  settings-button-title: "&dSettings"
+  settings-button-lore: "&fChange your preferences"
+
+  hugs-title: "&dHugs Received"
+  hugs-lore: "&fYou've received &d{count} &fhugs"
+  kisses-title: "&dKisses Received"
+  kisses-lore: "&fYou've received &d{count} &fkisses"
+  likes-title: "&dLikes Received"
+  likes-lore: "&fYou've received &d{count} &flikes"
+  marriage-title: "&dMarriage Status"
+  marriage-lore: "&fYou are married to &d{partner}\n&fFor &d{days} &fdays"
+  single-title: "&dRelationship Status"
+  single-lore: "&fYou are currently single"
+
+  leaderboard-entry-title: "&a#{rank} &d{player}"
+  leaderboard-entry-lore: "&fScore: &d{score}\n&fHugs: &d{hugs}\n&fKisses: &d{kisses}\n&fLikes: &d{likes}"
+
+  marriage-couple-title: "&d{player1} &f❤ &d{player2}"
+  marriage-couple-lore: "&fMarried since: &d{date}\n&fDays together: &d{days}"
+
+  language-en: "&fEnglish"
+  language-ru: "&fРусский"
+  language-de: "&fDeutsch"
+  language-it: "&fItaliano"
+  language-selected: "Selected language"
+
+  effect-spiral: "&dSpiral Effect"
+  effect-heart: "&dHeart Effect"
+  effect-cloud: "&dCloud Effect"
+  effect-selected: "Selected effect"
+
+  back-button: "&cBack"
+  prev-page-button: "&aPrevious Page"
+  next-page-button: "&aNext Page"
+  page-info: "&fPage &d{current}&f/&d{total}"</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="docs-nav">
+                <a href="../../index.html" class="docs-nav-prev">
+                    <i class="fas fa-chevron-left"></i> DOCS Home
+                </a>
+                <a href="../letsplay/index.html#home" class="docs-nav-next">
+                    LetsPlay <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-sone">Sone</span><span class="logo-mc">MC</span>
+                    <p>We're just getting started.</p>
+                </div>
+            
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="https://discord.gg/DxpqN5WXRt">Discord</a></li>
+                            <li><a href="https://github.com/SoneMCPL">Github</a></li>
+                            <li><a href="mailto:sonemcpl@gmail.com">Mail</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Homepage</h3>
+                        <ul>
+                            <li><a href="https://sonemc.pages.dev/#home">Home</a></li>
+                            <li><a href="https://sonemc.pages.dev/#about">About</a></li>
+                            <li><a href="https://sonemc.pages.dev/#projects">Projects</a></li>
+                            <li><a href="https://sonemc.pages.dev/#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Help</h3>
+                        <ul>
+                            <li><a href="https://sonemc.pages.dev/tools">Tools</a></li>
+                            <li><a href="https://sonemc.pages.dev/docs">Documentation</a></li>
+                            <li><a href="https://sonemc.pages.dev/information">Informations</a></li>
+                            <li><a href="https://sonemc.pages.dev/terms">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="https://www.spigotmc.org/members/sonemc.2226356/">SpigotMC</a></li>
+                            <li><a href="https://modrinth.com/user/SoneMC">Modrinth</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SoneMC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="../../../assets/js/global.js"></script>
+    <script src="../../../assets/js/docs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
