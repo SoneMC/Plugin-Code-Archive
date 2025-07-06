@@ -1,0 +1,35 @@
+name: TicTacToe
+version: 1.0.0
+main: sonemc.ticTacToe.TicTacToe
+api-version: 1.20
+author: SoneMC
+description: A TicTacToe minigame plugin for Minecraft
+
+commands:
+  ttt:
+    description: TicTacToe game commands
+    usage: /ttt <player> | /ttt accept | /ttt deny
+    aliases: [tictactoe]
+  tttleaderboard:
+    description: View the TicTacToe leaderboard
+    usage: /tttleaderboard
+    aliases: [tttlb, tictactoeleaderboard]
+  tttreload:
+    description: Reload TicTacToe configuration
+    usage: /tttreload
+    aliases: [tttrl, tictactoereload]
+  ttthelp:
+    description: Show TicTacToe help
+    usage: /ttthelp
+    aliases: [ttth, tictactoehelp]
+
+permissions:
+  tictactoe.play:
+    description: Allows playing TicTacToe
+    default: true
+  tictactoe.leaderboard:
+    description: Allows viewing the leaderboard
+    default: true
+  tictactoe.admin:
+    description: Allows administrative commands
+    default: op

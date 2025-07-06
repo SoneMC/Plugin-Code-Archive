@@ -1,0 +1,5 @@
+# TicTacToe Leaderboard Data
+# This file stores player statistics
+# DO NOT EDIT MANUALLY - Data is managed by the plugin
+
+players: {}
