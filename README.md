@@ -11,4 +11,4 @@ Plugins & Websites in this repository are not under active development or there 
 | Website | sonemc    | [Click](https://github.com/SoneMC/Plugin-Code-Archive/tree/main/sonemc)   | April 19, 2025 | June 1, 2025 |
 | Website | sonemc1    | [Click](https://github.com/SoneMC/Plugin-Code-Archive/tree/main/sonemc1)   | June 10, 2025 | June 1, 2025 |
 | Website | sonemc2    | [Click](https://github.com/SoneMC/Plugin-Code-Archive/tree/main/sonemc2)   | June 27, 2025 | June 1, 2025 |
-| Website | sonemc3_summer    | [Click](https://sonemcpl.pages.dev)   | MM DD, YYYY | MM DD, YYYY |
+| Website | sonemc3_summer    | [Click](https://github.com/SoneMC/Plugin-Code-Archive/tree/main/sonemc3_summer)   | July 07, 2025 | July 07, 2025 |
